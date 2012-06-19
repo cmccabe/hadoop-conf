@@ -1,6 +1,11 @@
 # Set Hadoop-specific environment variables here.
 
-export HADOOP_CONF_DIR="`readlink -f "`dirname $0`"`"
+die() {
+    echo $@
+    exit 1
+}
+[ "x$BASH_VERSION" != "x" ] || die "you must source this script in bash"
+export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # The only required environment variable is JAVA_HOME.  All others are
 # optional.  When running a distributed configuration it is best to
