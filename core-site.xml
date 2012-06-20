@@ -9,6 +9,14 @@
       <value>hdfs://127.0.0.1:6000</value>
     </property>
     <property>
+        <name>dfs.namenode.rpc-address</name>
+        <value>127.0.0.1:6000</value>
+    </property>
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>127.0.0.1:6001</value>
+    </property>
+    <property>
       <name>hadoop.tmp.dir</name>
       <value>/h/tmp</value>
     </property>
@@ -17,19 +25,11 @@
       <value>/r/logs</value>
     </property>
     <property>
-      <name>dfs.datanode.address</name>
-      <value>127.0.0.1:6100</value>
+        <name>hadoop.security.authentication</name>
+        <value>kerberos</value>
     </property>
     <property>
-      <name>dfs.http.address</name>
-      <value>127.0.0.1:6101</value>
-    </property>
-    <property>
-      <name>dfs.datanode.http.address</name>
-      <value>127.0.0.1:6102</value>
-    </property>
-    <property>
-      <name>dfs.datanode.ipc.address</name>
-      <value>127.0.0.1:6103</value>
+        <name>hadoop.security.authorization</name>
+        <value>true</value>
     </property>
 </configuration>
