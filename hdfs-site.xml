@@ -97,7 +97,7 @@
 </property>
 <property>
   <name>dfs.http.address</name>
-  <value>127.0.0.1:1002</value>
+  <value>127.0.0.1:8080</value>
 </property>
 <property>
   <name>dfs.datanode.http.address</name>
@@ -105,7 +105,7 @@
 </property>
 <property>
   <name>dfs.datanode.ipc.address</name>
-  <value>127.0.0.1:1004</value>
+  <value>127.0.0.1:4004</value>
 </property>
 
 </configuration>
