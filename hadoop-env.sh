@@ -18,6 +18,7 @@ export JAVA_HOME="/usr/java/jdk1.6.0_29"
 
 #export HADOOP_OPTS="-XX:+TraceClassLoading"
 #export HADOOP_OPTS="-verbose:class"
+export HADOOP_OPTS=""
 
 # The maximum amount of heap to use, in MB. Default is 1000.
 # export HADOOP_HEAPSIZE=2000
