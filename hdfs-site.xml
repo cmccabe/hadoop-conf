@@ -43,4 +43,22 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+
+<!-- settings to make testing fsck easier:
+     * small blocksize, to make multi-block files more common.
+     * rapid directory scan so we notice corruption earlier
+     * short block report interval
+-->
+<property>
+  <name>dfs.blocksize</name>
+  <value>1024</value>
+</property>
+<property>
+  <name>dfs.datanode.directoryscan.interval</name>
+  <value>1</value>
+</property>
+<property>
+  <name>dfs.blockreport.intervalMsec</name>
+  <value>10000</value>
+</property>
 </configuration>
