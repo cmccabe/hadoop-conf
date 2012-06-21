@@ -54,6 +54,10 @@
   <value>1024</value>
 </property>
 <property>
+  <name>dfs.block.size</name> <!-- branch-1 version -->
+  <value>1024</value>
+</property>
+<property>
   <name>dfs.datanode.directoryscan.interval</name>
   <value>1</value>
 </property>
