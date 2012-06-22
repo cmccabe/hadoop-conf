@@ -61,3 +61,8 @@ export HADOOP_PID_DIR="${HADOOP_RUN}/pids"
 
 # The scheduling priority for daemon processes.  See 'man nice'.
 # export HADOOP_NICENESS=10
+
+# disable security stuff
+export HADOOP_SECURE_DN_PID_DIR=""
+export HADOOP_SECURE_DN_LOG_DIR=""
+export HADOOP_SECURE_DN_USER=""
