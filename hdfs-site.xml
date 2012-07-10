@@ -93,7 +93,7 @@
 
 <property>
   <name>dfs.datanode.address</name>
-  <value>127.0.0.1:1001</value>
+  <value>127.0.0.1:10001</value>
 </property>
 <property>
   <name>dfs.http.address</name>
@@ -101,11 +101,31 @@
 </property>
 <property>
   <name>dfs.datanode.http.address</name>
-  <value>127.0.0.1:1003</value>
+  <value>127.0.0.1:10003</value>
 </property>
 <property>
   <name>dfs.datanode.ipc.address</name>
   <value>127.0.0.1:4004</value>
+</property>
+<property>
+  <name>dfs.http.port</name>
+  <value>8080</value>
+</property>
+<property>
+  <name>dfs.https.port</name>
+  <value>50470</value>
+</property>
+<property>
+  <name>dfs.datanode.require.secure.ports</name>
+  <value>false</value>
+</property>
+<property>
+  <name>ignore.secure.ports.for.testing</name>
+  <value>true</value>
+</property>
+<property>
+  <name>dfs.secondary.namenode.kerberos.https.principal</name>
+  <value>hdfs/keter</value>
 </property>
 
 </configuration>

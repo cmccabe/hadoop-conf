@@ -66,7 +66,8 @@ export HADOOP_PID_DIR="${HADOOP_RUN}/pids"
 # The scheduling priority for daemon processes.  See 'man nice'.
 # export HADOOP_NICENESS=10
 
-export HADOOP_SECURE_DN_USER=cmccabe
-export HADOOP_SECURE_DN_PID_DIR="${HADOOP_RUN}/pids"
-export HADOOP_SECURE_DN_LOG_DIR="${HADOOP_RUN}/logs"
+export HADOOP_DATANODE_USER=cmccabe
+export HADOOP_SECURE_DN_USER=
+export HADOOP_SECURE_DN_PID_DIR=
+export HADOOP_SECURE_DN_LOG_DIR=
 export JSVC_HOME="/home/cmccabe/src/bigtop-jsvc-1.0.10-cdh4.1.0-SNAPSHOT"
