@@ -52,11 +52,11 @@
 <!-- NameNode security config -->
 <property>
   <name>dfs.namenode.keytab.file</name>
-  <value>/home/cmccabe/conf/hdfs.keytab</value> <!-- path to the HDFS keytab -->
+  <value>/home/cmccabe/conf/cmccabe.keytab</value> <!-- path to the HDFS keytab -->
 </property>
 <property>
   <name>dfs.namenode.kerberos.principal</name>
-  <value>hdfs/_HOST@CLOUDERA.COM</value>
+  <value>cmccabe/_HOST@CLOUDERA.COM</value>
 </property>
 <property>
   <name>dfs.namenode.kerberos.internal.spnego.principal</name>
@@ -66,11 +66,11 @@
 <!-- Secondary NameNode security config -->
 <property>
   <name>dfs.secondary.namenode.keytab.file</name>
-  <value>/home/cmccabe/conf/hdfs.keytab</value> <!-- path to the HDFS keytab -->
+  <value>/home/cmccabe/conf/cmccabe.keytab</value> <!-- path to the HDFS keytab -->
 </property>
 <property>
   <name>dfs.secondary.namenode.kerberos.principal</name>
-  <value>hdfs/_HOST@CLOUDERA.COM</value>
+  <value>cmccabe/_HOST@CLOUDERA.COM</value>
 </property>
 <property>
   <name>dfs.secondary.namenode.kerberos.internal.spnego.principal</name>
@@ -84,11 +84,11 @@
 </property>
 <property>
   <name>dfs.datanode.keytab.file</name>
-  <value>/home/cmccabe/conf/hdfs.keytab</value> <!-- path to the HDFS keytab -->
+  <value>/home/cmccabe/conf/cmccabe.keytab</value> <!-- path to the HDFS keytab -->
 </property>
 <property>
   <name>dfs.datanode.kerberos.principal</name>
-  <value>hdfs/_HOST@CLOUDERA.COM</value>
+  <value>cmccabe/_HOST@CLOUDERA.COM</value>
 </property>
 
 <property>
@@ -125,7 +125,7 @@
 </property>
 <property>
   <name>dfs.secondary.namenode.kerberos.https.principal</name>
-  <value>hdfs/keter</value>
+  <value>cmccabe/keter</value>
 </property>
 
 </configuration>
