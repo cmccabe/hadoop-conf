@@ -32,4 +32,12 @@
       <name>dfs.datanode.ipc.address</name>
       <value>127.0.0.1:6103</value>
     </property>
+    <property>
+      <name>dfs.support.append</name>
+      <value>true</value>
+    </property>
+    <property>
+      <name>dfs.support.broken.append</name>
+      <value>true</value>
+    </property>
 </configuration>
