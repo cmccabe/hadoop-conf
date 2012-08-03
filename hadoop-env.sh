@@ -6,6 +6,7 @@ die() {
 }
 [ "x$BASH_VERSION" != "x" ] || die "you must source this script in bash"
 export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
 
 # The only required environment variable is JAVA_HOME.  All others are
 # optional.  When running a distributed configuration it is best to
