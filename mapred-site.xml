@@ -2,6 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
 <property>
+  <name>mapreduce.framework.name</name>
+  <value>yarn</value>
+</property>
+<property>
   <name>mapred.task.tracker.http.address</name>
   <value>127.0.0.1:6400</value>
 </property>
