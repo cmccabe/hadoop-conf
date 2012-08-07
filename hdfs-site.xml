@@ -3,15 +3,15 @@
 <configuration>
 <property>
   <name>dfs.name.dir</name>
-  <value>/r/name1,/r/name2</value>
+  <value>/r/name</value>
 </property>
 <property>
   <name>dfs.data.dir</name>
-  <value>/r/data1,/r/data2</value>
+  <value>/r/data</value>
 </property>
 <property>
   <name>fs.checkpoint.dir</name>
-  <value>/r/chkpt1,/r/chkpt2</value>
+  <value>/r/chkpt</value>
 </property>
 <property>
   <name>dfs.heartbeat.interval</name>
@@ -19,7 +19,7 @@
 </property>
 <property>
   <name>fs.checkpoint.period</name>
-  <value>30</value> <!-- deliberately short in order to test checkpointing foo -->
+  <value>300000</value>
 </property>
 <!--
 <property>
