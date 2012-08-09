@@ -10,6 +10,10 @@
   <value>/r/data</value>
 </property>
 <property>
+  <name>dfs.replication.min</name>
+  <value>1</value>
+</property>
+<property>
   <name>fs.checkpoint.dir</name>
   <value>/r/chkpt</value>
 </property>
