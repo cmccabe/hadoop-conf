@@ -1,35 +1,41 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
-    <!-- WARNING: anything you put here may be overwritten by HDFS defaults!
-    Still, you have to put configuration options that clients also need in
-    here. -->
-    <property>
-      <name>fs.default.name</name>
-      <value>hdfs://127.0.0.1:6000</value>
-    </property>
-    <property>
-      <name>hadoop.tmp.dir</name>
-      <value>/h/tmp</value>
-    </property>
-    <property>
-      <name>hadoop.log.dir</name>
-      <value>/r/logs</value>
-    </property>
-    <property>
-      <name>dfs.datanode.address</name>
-      <value>127.0.0.1:6100</value>
-    </property>
-    <property>
-      <name>dfs.http.address</name>
-      <value>127.0.0.1:6101</value>
-    </property>
-    <property>
-      <name>dfs.datanode.http.address</name>
-      <value>127.0.0.1:6102</value>
-    </property>
-    <property>
-      <name>dfs.datanode.ipc.address</name>
-      <value>127.0.0.1:6103</value>
-    </property>
+
+<property>
+  <name>fs.default.name</name>
+  <value>hdfs://0.0.0.0:8020</value>
+<!--
+ <value>hdfs://localhost:9000</value>
+  <value>hdfs://haus01.sf.cloudera.com:10020</value>
+-->
+</property>
+
+<property>
+  <name>hadoop.tmp.dir</name>
+  <value>/r/tmp</value>
+</property>
+
+<property>
+  <name>hadoop.log.dir</name>
+  <value>/r/logs</value>
+</property>
+
+<!--
+<property>
+  <name>hadoop.relaxed.worker.version.check</name>
+  <value>false</value>
+</property>
+-->
+
+<property>
+  <name>fs.trash.checkpoint.interval</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>fs.trash.interval</name>
+  <value>3</value>
+</property>
+
 </configuration>

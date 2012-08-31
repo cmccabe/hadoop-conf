@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<!--
+<property>
+  <name>dfs.namenode.servicerpc-address</name>
+  <value>0.0.0.0:0</value>
+</property>
+-->
+<property>
+  <name>dfs.webhdfs.enabled</name>
+  <value>true</value>
+</property>
+
+<!--
+<property>
+  <name>dfs.client.use.datanode.hostname</name>
+  <value>true</value>
+</property>
+<property>
+  <name>dfs.datanode.use.datanode.hostname</name>
+  <value>true</value>
+</property>
+-->
+
+<!--
+<property>
+  <name>dfs.client.local.interfaces</name>
+  <value>eth3,wlan2</value>
+  <value>172.29.20.0/20</value>
+  <value>172.29.20.38,172.29.20.39</value>
+</property>
+-->
+<!--
+<property>
+  <name>dfs.datanode.dns.interface</name>
+  <value>foobar</value>
+</property>
+-->
+<!--
+<property>
+  <name>slave.host.name</name>
+  <value>foobar</value>
+</property>
+-->
+<property>
+  <name>dfs.datanode.ipc.address</name>
+  <value>0.0.0.0:0</value>
+</property>
+<property>
+  <name>dfs.datanode.address</name>
+  <value>0.0.0.0:0</value>
+</property>
+<!--
+<property>
+  <name>dfs.datanode.http.address</name>
+  <value>0.0.0.0:0</value>
+</property>
+-->
+<property>
+  <name>dfs.name.dir</name>
+  <value>/r/name1,/r/name2</value>
+</property>
+<property>
+  <name>dfs.data.dir</name>
+  <value>/r/data1,/r/data2</value>
+</property>
+<property>
+  <name>fs.checkpoint.dir</name>
+  <value>/r/chkpt1,/r/chkpt2</value>
+</property>
+<property>
+  <name>dfs.heartbeat.interval</name>
+  <value>1</value>
+</property>
+<property>
+  <name>fs.checkpoint.period</name>
+  <value>60</value>
+</property>
+<property>
+  <name>dfs.image.transfer.bandwidthPerSec</name>
+  <value>0</value>
+</property>
+<!--
+<property>
+  <name>dfs.client.read.shortcircuit</name>
+  <value>true</value>
+</property>
+<property>
+  <name>dfs.block.local-path-access.user</name>
+  <value>eli</value>
+</property>
+-->
+<property>
+  <name>dfs.datanode.failed.volumes.tolerated</name>
+  <value>1</value>
+</property>
+<!--
+<property>
+  <name>dfs.datanode.scan.period.hours</name>
+  <value>1</value>
+</property>
+<property>
+  <name>dfs.datanode.directoryscan.threads</name>
+  <value>1</value>
+</property>
+-->
+<property>
+  <name>dfs.block.size</name>
+  <value>134217728</value>
+</property>
+
+<property>
+  <name>dfs.http.address</name>
+  <value>hdfs://172.22.1.143:8080</value>
+</property>
+<property>
+  <name>dfs.http.port</name>
+  <value>8080</value>
+</property>
+<property>
+  <name>fs.default.name</name>
+  <value>hdfs://172.22.1.143:8020</value>
+</property>
+
+<property>
+  <name>hadoop.tmp.dir</name>
+  <value>/r/tmp</value>
+</property>
+
+<property>
+  <name>hadoop.log.dir</name>
+  <value>/r/logs</value>
+</property>
+
+<!--
+<property>
+  <name>hadoop.relaxed.worker.version.check</name>
+  <value>false</value>
+</property>
+-->
+
+<property>
+  <name>fs.trash.checkpoint.interval</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>fs.trash.interval</name>
+  <value>3</value>
+</property>
+
+</configuration>

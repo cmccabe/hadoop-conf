@@ -8,8 +8,12 @@ die() {
 export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
 
-# Set JAVA_HOME if it isn't already defined.
+# The only required environment variable is JAVA_HOME.  All others are
+# optional.  When running a distributed configuration it is best to
+# set JAVA_HOME in this file, so that it is correctly defined on
+# remote nodes.
 export JAVA_HOME="${JAVA_HOME-/usr/java/jdk1.6.0_29}"
+export PATH="${PATH}:$JAVA_HOME/bin"
 
 # Extra Java CLASSPATH elements.  Optional.
 # export HADOOP_CLASSPATH="<extra_entries>:$HADOOP_CLASSPATH"
