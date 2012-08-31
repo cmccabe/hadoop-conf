@@ -7,11 +7,11 @@
 </property>
 <property>
   <name>mapred.task.tracker.http.address</name>
-  <value>127.0.0.1:6400</value>
+  <value>0.0.0.0:6400</value>
 </property>
 <property>
   <name>mapred.job.tracker</name>
-  <value>127.0.0.1:6300</value>
+  <value>0.0.0.0:6300</value>
 </property>
 <property>
   <name>mapred.local.dir</name>
