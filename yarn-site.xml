@@ -10,4 +10,44 @@
     <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
     <value>org.apache.hadoop.mapred.ShuffleHandler</value>
   </property>
+
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>0.0.0.0:9090</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>0.0.0.0:9095</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>0.0.0.0:9096</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.local-dirs</name>
+    <value>/r/rsman</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.address</name>
+    <value>0.0.0.0:9097</value>
+  </property>  
+
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>10240</value>
+  </property>
+ 
+  <property>
+    <name>yarn.nodemanager.remote-app-log-dir</name>
+    <value>/r/nodeman</value>
+  </property>
+
+   <property>
+    <name>yarn.nodemanager.log-dirs</name>
+    <value>/r/nodelog</value>
+  </property>
 </configuration>
