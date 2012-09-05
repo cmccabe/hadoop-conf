@@ -6,7 +6,7 @@
     here. -->
     <property>
       <name>fs.default.name</name>
-      <value>hdfs://0.0.0.0:6000</value>
+      <value>hdfs://localhost:6000</value>
     </property>
     <property>
       <name>hadoop.tmp.dir</name>
