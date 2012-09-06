@@ -41,6 +41,14 @@
   <name>mapreduce.tasktracker.task-controller.exe</name>
   <value>_ROOT_/sbin/Linux-amd64-64/task-controller</value>
 </property>
+<property>
+  <name>mapred.compress.map.output</name>
+  <value>true</value>
+</property>
+<property>
+  <name>mapred.map.output.compression.codec</name>
+  <value>org.apache.hadoop.io.compress.SnappyCodec</value>
+</property>
 <!--
 <property>
   <name>mapred.healthChecker.script.path</name>
