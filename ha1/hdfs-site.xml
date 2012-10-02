@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration xmlns:xi="http://www.w3.org/2001/XInclude">
+  <property>
+    <name>my.ha.nn.id</name>
+    <value>1</value>
+  </property>
+  <xi:include href="../hdfs-site.xml" />
+  <xi:include href="../hdfs-ha-common.xml" />
+</configuration>
