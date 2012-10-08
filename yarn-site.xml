@@ -56,6 +56,6 @@
   </property>
   <property>
     <name>mapred.map.output.compress.codec</name> 
-    <value>org.apache.hadoop.io.compress.SnappyCodec</value>
+    <value>org.apache.hadoop.io.compress.GzipCodec</value>
   </property>
 </configuration>
