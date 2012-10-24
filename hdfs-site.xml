@@ -39,7 +39,7 @@
 </property>
 <property>
   <name>fs.checkpoint.period</name>
-  <value>30</value> <!-- deliberately short in order to test checkpointing foo -->
+  <value>3000</value>
 </property>
 <!--
 <property>
