@@ -63,4 +63,8 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+<property>
+  <name>dfs.datanode.domain.socket.path</name>
+  <value>/tmp/dn_sock.%d</value>
+</property>
 </configuration>
