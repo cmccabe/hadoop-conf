@@ -67,8 +67,4 @@
   <name>dfs.datanode.domain.socket.path</name>
   <value>/tmp/dn_sock.%d</value>
 </property>
-<property>
-  <name>dfs.client.use.legacy.blockreader</name>
-  <value>true</value>
-</property>
 </configuration>
