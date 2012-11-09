@@ -109,10 +109,10 @@
 </property>
 <property>
   <name>dfs.namenode.shared.edits.dir</name>
-  <value>file:///h/nameS</value>
+  <value>qjournal://127.0.0.1:9111;127.0.0.1:9112;127.0.0.1:9113/ljournal</value>
 </property>
-<property>
+<!--<property>
   <name>dfs.namenode.edits.dir.required</name>
   <value>file:///h/nameS</value>
-</property>
+</property> -->
 </configuration>
