@@ -75,4 +75,16 @@
   <name>dfs.client.read.shortcircuit.skip.checksum</name>
   <value>false</value>
 </property>
+<property>
+  <name>dfs.block.local-path-access.user</name>
+  <value>cmccabe</value>
+</property>
+<property>
+  <name>dfs.datanode.data.dir.perm</name>
+  <value>755</value>
+</property>
+<property>
+  <name>dfs.datanode.hdfs-blocks-metadata.enabled</name>
+  <value>true</value>
+</property>
 </configuration>
