@@ -1,0 +1,8 @@
+to get mr1 working, had to do: 
+chown root /home /home/cmccabe /home/cmccabe/conf
+chown root /h/bin/task-controller
+chmod 4750 /h/bin/task-controller
+mkdir -p /etc/hadoop
+cd /etc/hadoop && ln -s /home/cmccabe/conf/taskcontroller.cfg
+
+todo: fix it so I don't have to do all this!
