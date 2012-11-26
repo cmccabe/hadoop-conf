@@ -15,23 +15,23 @@
 </property>
 <property>
   <name>mapred.local.dir</name>
-  <value>_ROOT_/local1/mapred,_ROOT_/local2/mapred</value>
+  <value>/r/mr/local1/mapred,/r/mr/local2</value>
 </property>
 <property>
   <name>mapred.system.dir</name>
-  <value>/mapred/system</value>
+  <value>/r/mr/system</value>
 </property>
 <property>
   <name>mapreduce.jobtracker.staging.root.dir</name>
-  <value>/user/_USER_/mapred/staging</value>
+  <value>/r/mr/staging</value>
 </property>
 <property>
   <name>mapred.temp.dir</name>
-  <value>/user/_USER_/mapred/temp</value>
+  <value>/r/mr/tmp</value>
 </property>
 <property>
   <name>mapreduce.tasktracker.group</name>
-  <value>mapred</value>
+  <value>users</value>
 </property>
 <property>
   <name>mapred.task.tracker.task-controller</name>
@@ -39,7 +39,7 @@
 </property>
 <property>
   <name>mapreduce.tasktracker.task-controller.exe</name>
-  <value>_ROOT_/sbin/Linux-amd64-64/task-controller</value>
+  <value>/h/sbin/task-controller</value>
 </property>
 <!--
 <property>
