@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration xmlns:xi="http://www.w3.org/2001/XInclude">
+<property>
+  <name>dfs.datanode.address</name>
+  <value>0.0.0.0:9100</value>
+</property>
+<property>
+  <name>dfs.datanode.http.address</name>
+  <value>0.0.0.0:9101</value>
+</property>
+<property>
+  <name>dfs.datanode.ipc.address</name>
+  <value>0.0.0.0:9102</value>
+</property>
+<property>
+  <name>dfs.data.dir</name>
+  <value>/r/1data1,/r/1data2</value>
+</property>
+<property>
+  <name>dfs.datanode.bank</name>
+  <value>1</value>
+</property>
+<xi:include href="../hdfs-site.xml" />
+</configuration>
