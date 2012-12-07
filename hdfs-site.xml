@@ -109,10 +109,10 @@
 </property>
 <property>
   <name>dfs.namenode.shared.edits.dir</name>
-  <value>file:///h/nameS</value>
+  <value>file:///r/nameS</value>
 </property>
 <property>
   <name>dfs.namenode.edits.dir.required</name>
-  <value>file:///h/nameS</value>
+  <value>file:///r/nameS</value>
 </property>
 </configuration>
