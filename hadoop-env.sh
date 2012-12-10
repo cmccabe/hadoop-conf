@@ -9,7 +9,7 @@ export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
 
 # Set JAVA_HOME if it isn't already defined.
-export JAVA_HOME="${JAVA_HOME-/usr/java/jdk1.6.0_29}"
+export JAVA_HOME="${JAVA_HOME-/usr/java/jdk1.6.0_31}"
 
 # Extra Java CLASSPATH elements.  Optional.
 # export HADOOP_CLASSPATH="<extra_entries>:$HADOOP_CLASSPATH"

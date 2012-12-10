@@ -6,7 +6,7 @@
     here. -->
     <property>
       <name>fs.default.name</name>
-      <value>hdfs://localhost:6000</value>
+      <value>hdfs://c1526.hal.cloudera.com</value>
     </property>
     <property>
       <name>hadoop.tmp.dir</name>

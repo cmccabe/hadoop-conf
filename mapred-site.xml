@@ -11,7 +11,7 @@
 </property>
 <property>
   <name>mapred.job.tracker</name>
-  <value>0.0.0.0:6300</value>
+  <value>c1526.hal.cloudera.com:6300</value>
 </property>
 <property>
   <name>mapred.local.dir</name>
@@ -31,9 +31,9 @@
 </property>
 <property>
   <name>mapreduce.tasktracker.group</name>
-  <value>users</value>
+  <value>cmccabe</value>
 </property>
-<property>
+<!--<property>
   <name>mapred.task.tracker.task-controller</name>
   <value>org.apache.hadoop.mapred.LinuxTaskController</value>
 </property>
@@ -41,6 +41,7 @@
   <name>mapreduce.tasktracker.task-controller.exe</name>
   <value>/h/sbin/task-controller</value>
 </property>
+-->
 <!--
 <property>
   <name>mapred.healthChecker.script.path</name>
