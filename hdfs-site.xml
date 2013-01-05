@@ -7,7 +7,7 @@
 </property>
 <property>
   <name>dfs.datanode.address</name>
-  <value>0.0.0.0:6100</value>
+  <value>0.0.0.0:610</value>
 </property>
 <property>
   <name>dfs.http.address</name>
