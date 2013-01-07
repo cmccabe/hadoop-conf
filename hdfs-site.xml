@@ -63,4 +63,8 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+<property>
+  <name>dfs.client.use.legacy.blockreader</name>
+  <value>true</value>
+</property>
 </configuration>
