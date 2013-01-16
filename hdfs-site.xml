@@ -22,16 +22,8 @@
   <value>0.0.0.0:6102</value>
 </property>
 <property>
-  <name>dfs.name.dir</name>
-  <value>/r/name1,/r/name2</value>
-</property>
-<property>
   <name>dfs.data.dir</name>
   <value>/r/data1,/r/data2</value>
-</property>
-<property>
-  <name>fs.checkpoint.dir</name>
-  <value>/r/chkpt1,/r/chkpt2</value>
 </property>
 <property>
   <name>dfs.heartbeat.interval</name>
@@ -65,54 +57,34 @@
 </property>
 <property>
   <name>dfs.nameservice.id</name>
-  <value>ha-nn-uri</value>
+  <value>keter-uri</value>
 </property>
 <property>
   <name>dfs.federation.nameservices</name>
-  <value>ha-nn-uri</value>
+  <value>keter-uri</value>
 </property>
 <property>
-  <name>dfs.ha.namenodes.ha-nn-uri</name>
-  <value>nn1,nn2</value>
-</property>
-<property>
-  <name>dfs.ha.fencing.methods</name>
-  <value>shell(true)</value>
-</property>
-<property>
-  <name>dfs.client.failover.proxy.provider.ha-nn-uri</name>
-  <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
-</property>
-<property>
-  <name>dfs.namenode.rpc-address.ha-nn-uri.nn1</name>
+  <name>dfs.namenode.rpc-address.keter-uri.nn1</name>
   <value>127.0.0.1:8021</value>
 </property>
 <property>
-  <name>dfs.namenode.rpc-address.ha-nn-uri.nn2</name>
+  <name>dfs.namenode.rpc-address.keter-uri.nn2</name>
   <value>127.0.0.1:8022</value>
 </property>
 <property>
-  <name>dfs.namenode.http-address.ha-nn-uri.nn1</name>
+  <name>dfs.namenode.http-address.keter-uri.nn1</name>
   <value>127.0.0.1:50071</value>
 </property>
 <property>
-  <name>dfs.namenode.http-address.ha-nn-uri.nn2</name>
+  <name>dfs.namenode.http-address.keter-uri.nn2</name>
   <value>127.0.0.1:50072</value>
 </property>
 <property>
-  <name>dfs.namenode.https-address.ha-nn-uri.nn1</name> <!-- only for security -->
+  <name>dfs.namenode.https-address.keter-uri.nn1</name> <!-- only for security -->
   <value>127.0.0.1:50471</value>
 </property>
 <property>
-  <name>dfs.namenode.https-address.ha-nn-uri.nn2</name> <!-- only for security -->
+  <name>dfs.namenode.https-address.keter-uri.nn2</name> <!-- only for security -->
   <value>127.0.0.1:50472</value>
-</property>
-<property>
-  <name>dfs.namenode.shared.edits.dir</name>
-  <value>file:///r/nameS</value>
-</property>
-<property>
-  <name>dfs.namenode.edits.dir.required</name>
-  <value>file:///r/nameS</value>
 </property>
 </configuration>

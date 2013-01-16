@@ -2,9 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration xmlns:xi="http://www.w3.org/2001/XInclude">
   <property>
-    <name>my.ha.nn.id</name>
-    <value>1</value>
+    <name>dfs.name.dir</name>
+    <value>/r/name/a1,/r/name/a2</value>
+  </property>
+  <property>
+    <name>fs.checkpoint.dir</name>
+    <value>/r/chk/a1,/r/chk/a2</value>
   </property>
   <xi:include href="../hdfs-site.xml" />
-  <xi:include href="../hdfs-ha-common.xml" />
 </configuration>
