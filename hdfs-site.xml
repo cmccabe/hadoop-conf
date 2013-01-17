@@ -64,8 +64,8 @@
   <value>1</value>
 </property>
 <property>
-  <name>dfs.datanode.domain.socket.path</name>
-  <value>/r/socks/dn_sock.__PORT__</value>
+  <name>dfs.domain.socket.path</name>
+  <value>/r/socks/dn_sock._PORT</value>
 </property>
 <property>
   <name>dfs.client.read.shortcircuit</name>
