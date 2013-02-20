@@ -2,6 +2,14 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
 <property>
+  <name>dfs.namenode.rpc-address</name>
+  <value>172.22.1.216:6000</value>
+</property>
+<property>
+  <name>dfs.namenode.http-address</name>
+  <value>172.22.1.216:6100</value>
+</property>
+<property>
   <name>dfs.webhdfs.enabled</name>
   <value>true</value>
 </property>
