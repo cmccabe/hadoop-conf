@@ -11,7 +11,7 @@
 </property>
 <property>
   <name>dfs.http.address</name>
-  <value>0.0.0.0:6001</value>
+  <value>172.22.1.216:6001</value>
 </property>
 <property>
   <name>dfs.datanode.http.address</name>
