@@ -63,4 +63,8 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+<property>
+  <name>net.topology.script.file.name</name>
+  <value>${user.home}/conf/topology.sh</value>
+</property>
 </configuration>
