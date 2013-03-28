@@ -89,6 +89,6 @@
 </property>
 <property>
   <name>dfs.client.use.legacy.blockreader.local</name>
-  <value>true</value>
+  <value>false</value>
 </property>
 </configuration>
