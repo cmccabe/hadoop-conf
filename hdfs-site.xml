@@ -86,10 +86,10 @@
   <name>dfs.datanode.keytab.file</name>
   <value>/home/cmccabe/conf/hdfs.keytab</value> <!-- path to the HDFS keytab -->
 </property>
-<property>
+<!--<property>
   <name>dfs.datanode.kerberos.principal</name>
   <value>hdfs/_HOST@CLOUDERA.COM</value>
-</property>
+</property>-->
 
 <property>
   <name>dfs.datanode.address</name>
@@ -128,7 +128,7 @@
   <value>hdfs/keter</value>
 </property>
 <property>
-  <name>dfs.datanode.domain.socket.path</name>
+  <name>dfs.domain.socket.path</name>
   <value>/r/socks/dn_sock.__PORT__</value>
 </property>
 <property>
@@ -145,7 +145,7 @@
 </property>
 <property>
   <name>dfs.block.local-path-access.user</name>
-  <value>cmccabe</value>
+  <value>hdfs,cmccabe</value>
 </property>
 <property>
   <name>dfs.datanode.data.dir.perm</name>
@@ -155,5 +155,9 @@
   <name>dfs.datanode.hdfs-blocks-metadata.enabled</name>
   <value>true</value>
 </property>
+<!--<property>
+  <name>dfs.client.use.legacy.blockreader.local</name>
+  <value>true</value>
+</property>-->
 
 </configuration>
