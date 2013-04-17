@@ -2,6 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
 <property>
+  <name>dfs.hosts.exclude</name>
+  <value>/home/cmccabe/conf/exclude.txt</value>
+</property>
+<property>
   <name>dfs.webhdfs.enabled</name>
   <value>true</value>
 </property>
