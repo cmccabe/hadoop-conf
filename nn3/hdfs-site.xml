@@ -3,9 +3,9 @@
 <configuration xmlns:xi="http://www.w3.org/2001/XInclude">
   <property>
     <name>my.ha.nn.id</name>
-    <value>1</value>
+    <value>3</value>
   </property>
-  <xi:include href="../ns1.xml" />
+  <xi:include href="../ns2.xml" />
   <xi:include href="../hdfs-site.xml" />
   <xi:include href="../hdfs-ha-common.xml" />
 </configuration>
