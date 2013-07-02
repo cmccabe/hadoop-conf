@@ -67,4 +67,16 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+<!--<property>
+  <name>fs.trash.classname</name>
+  <value>org.apache.hadoop.fs.TrashPolicyDefault</value>
+</property> -->
+<property>
+  <name>fs.trash.interval</name> <!-- in milliseconds -->
+  <value>4000</value>
+</property>
+<property>
+  <name>fs.trash.checkpoint.interval</name> <!-- in milliseconds -->
+  <value>2000</value>
+</property>
 </configuration>
