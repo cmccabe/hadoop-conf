@@ -67,4 +67,8 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+<property>
+  <name>dfs.datanode.readahead.bytes</name>
+  <value>0</value>
+</property>
 </configuration>
