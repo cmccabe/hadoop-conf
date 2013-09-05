@@ -27,15 +27,15 @@
 </property>
 <property>
   <name>dfs.name.dir</name>
-  <value>/r/name1,/r/name2</value>
+  <value>/data/1/cmccabe/caching/name,/data/2/cmccabe/caching/name</value>
 </property>
 <property>
   <name>dfs.data.dir</name>
-  <value>/r/data1,/r/data2</value>
+  <value>/data/2/cmccabe/caching/data,/data/3/cmccabe/caching/data,/data/4/cmccabe/caching/data,/data/5/cmccabe/caching/data,/data/6/cmccabe/caching/data,/data/7/cmccabe/caching/data,/data/8/cmccabe/caching/data,/data/9/cmccabe/caching/data,/data/10/cmccabe/caching/data,/data/11/cmccabe/caching/data</value>
 </property>
 <property>
   <name>fs.checkpoint.dir</name>
-  <value>/r/chkpt1,/r/chkpt2</value>
+  <value>/data/3/cmccabe/caching/checkpoint,/data/4/cmccabe/caching/checkpoint</value>
 </property>
 <property>
   <name>dfs.heartbeat.interval</name>
@@ -43,28 +43,39 @@
 </property>
 <property>
   <name>fs.checkpoint.period</name>
-  <value>30</value> <!-- deliberately short in order to test checkpointing foo -->
+  <value>3600000</value> <!-- one hour between checkpoints -->
 </property>
-<!--
-<property>
+<property> <!-- no failures tolerated or repaired -->
   <name>dfs.datanode.failed.volumes.tolerated</name>
-  <value>1</value>
+  <value>0</value>
 </property>
--->
 <property>
   <name>dfs.namenode.name.dir.restore</name>
-  <value>true</value>
+  <value>false</value>
 </property>
 <property>
   <name>dfs.datanode.scan.period.hours</name>
-  <value>1</value>
+  <value>10</value>
 </property>
 <property>
   <name>dfs.client.buffer.dir</name>
-  <value>/r/buffer</value>
+  <value>/home/cmccabe/r/buffer</value>
 </property>
 <property>
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
+</property>
+<!-- short-circuit -->
+<property>
+  <name>dfs.domain.socket.path</name>
+  <value>/var/lib/hadoop-hdfs/dn_sock._PORT</value>
+</property>
+<property>
+  <name>dfs.client.read.shortcircuit</name>
+  <value>true</value>
+</property>
+<property> <!-- TODO: revisit this -->
+  <name>dfs.client.read.shortcircuit.skip.checksum</name>
+  <value>true</value>
 </property>
 </configuration>

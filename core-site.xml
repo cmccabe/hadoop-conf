@@ -6,15 +6,15 @@
     here. -->
     <property>
       <name>fs.default.name</name>
-      <value>hdfs://localhost:6000</value>
+      <value>hdfs://a2412.halxg.cloudera.com:6000</value>
     </property>
     <property>
       <name>hadoop.tmp.dir</name>
-      <value>/h/tmp</value>
+      <value>/home/cmccabe/r/tmp</value>
     </property>
     <property>
       <name>hadoop.log.dir</name>
-      <value>/r/logs</value>
+      <value>/home/cmccabe/r/logs</value>
     </property>
     <property>
       <name>hadoop.security.group.mapping</name>
