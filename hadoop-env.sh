@@ -33,8 +33,8 @@ export HADOOP_JOBTRACKER_OPTS="-Dcom.sun.management.jmxremote $HADOOP_JOBTRACKER
 # Extra ssh options.  Empty by default.
 # export HADOOP_SSH_OPTS="-o ConnectTimeout=1 -o SendEnv=HADOOP_CONF_DIR"
 
-export HADOOP_RUN="/r"
-export HADOOP_HOME_BASE="/h"
+export HADOOP_RUN="/home/cmccabe/r"
+export HADOOP_HOME_BASE="/home/cmccabe/h"
 #export HADOOP_HDFS_HOME="${HADOOP_HOME_BASE}"
 
 # Where log files are stored.  $HADOOP_HOME_BASE/logs by default.
