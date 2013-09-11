@@ -14,11 +14,12 @@ cd /home/cmccabe
 if [ "x$HOSTNAME" == "x${MASTER}" ]; then
     echo "starting master services..."
     /home/cmccabe/h/bin/hadoop namenode &> "${L}/namenode.log" &
-    statestored &> "${L}/statestored.log" &
+    impalad -state_store_host=${MASTER} -hostname=${HOSTNAME} -logtostderr &> "${L}/impalad.log" &
+    statestored -logtostderr &> "${L}/statestored.log" &
 else
     echo "starting slave services..."
     /home/cmccabe/h/bin/hadoop datanode &> "${L}/datanode.log" &
-    impalad -state_store_host=${MASTER} -hostname=${HOSTNAME} &> "${L}/impalad.log" &
+    impalad -state_store_host=${MASTER} -hostname=${HOSTNAME} -logtostderr &> "${L}/impalad.log" &
 fi
 echo "ready"
-wait
+disown
