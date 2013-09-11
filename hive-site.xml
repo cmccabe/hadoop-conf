@@ -3,7 +3,8 @@
 <configuration>
   <property>
     <name>javax.jdo.option.ConnectionURL</name>
-    <value>jdbc:mysql://a2412.halxg.cloudera.com/metastore</value>
+    <value>jdbc:mysql://localhost:3306/metastore?createDatabaseIfNotExist=true</value>
+    <!--<value>jdbc:mysql://a2412.halxg.cloudera.com:3306/metastore?createDatabaseIfNotExist=true</value> -->
     <description>the URL of the MySQL database</description>
   </property>
 
@@ -33,8 +34,8 @@
   </property>
 
   <property>
-    <name>hive.metastore.uris</name>
-    <value>thrift://10.20.212.20:9083</value>
-    <description>IP address (or fully-qualified domain name) and port of the metastore host</description>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>/user/impala</value>
   </property>
+
 </configuration>
