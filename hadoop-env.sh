@@ -66,3 +66,4 @@ export HADOOP_SECURE_DN_LOG_DIR=""
 export HADOOP_SECURE_DN_USER=""
 export HIVE_HOME="/home/cmccabe/hive"
 export HADOOP_HOME="${HADOOP_HOME_BASE}"
+source /home/cmccabe/conf/nodes.sh
