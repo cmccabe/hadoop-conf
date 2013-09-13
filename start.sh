@@ -20,7 +20,6 @@ if [ "x$HOSTNAME" == "x${MASTER}" ]; then
 else
     echo "starting slave services..."
     /home/cmccabe/h/bin/hadoop datanode &> "${L}/datanode.log" &
-    impalad -state_store_host=${MASTER} -hostname=${HOSTNAME} -logtostderr &> "${L}/impalad.log" &
     bash -c "sleep 1; impalad -state_store_host=${MASTER} -hostname=${HOSTNAME} -logtostderr &> ${L}/impalad.log &" &
 fi
 echo "ready"
