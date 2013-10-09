@@ -67,4 +67,16 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+<property>
+  <name>dfs.namenode.caching.enabled</name>
+  <value>true</value>
+</property>
+<property>
+  <name>dfs.namenode.path.based.cache.refresh.interval.ms</name>
+  <value>15000</value>
+</property>
+<property>
+  <name>dfs.datanode.max.locked.memory</name>
+  <value>1073741824</value>
+</property>
 </configuration>
