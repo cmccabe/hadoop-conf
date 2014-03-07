@@ -67,4 +67,12 @@
   <name>dfs.datanode.directoryscan.threads</name>
   <value>1</value>
 </property>
+<property>
+  <name>dfs.client.read.shortcircuit</name>
+  <value>true</value>
+</property>
+<property>
+  <name>dfs.domain.socket.path</name>
+  <value>/r/sock</value>
+</property>
 </configuration>
