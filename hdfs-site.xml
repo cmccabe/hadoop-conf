@@ -75,4 +75,8 @@
   <name>dfs.domain.socket.path</name>
   <value>/r/sock</value>
 </property>
+<property>
+  <name>dfs.checksum.type</name>
+  <value>NULL</value>
+</property>
 </configuration>
