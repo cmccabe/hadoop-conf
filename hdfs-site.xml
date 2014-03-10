@@ -12,7 +12,7 @@
 <property>
   <name>dfs.secondary.http.address</name>
   <value>0.0.0.0:5000</value>
-<property>
+</property>
 <property>
   <name>dfs.datanode.address</name>
   <value>0.0.0.0:6100</value>
