@@ -79,4 +79,8 @@
   <name>dfs.domain.socket.path</name>
   <value>/r/sock</value>
 </property>
+<property>
+  <name>dfs.datanode.max.locked.memory</name>
+  <value>25301430272</value>
+</property>
 </configuration>
