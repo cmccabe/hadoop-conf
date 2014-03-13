@@ -10,24 +10,28 @@
   <value>true</value>
 </property>
 <property>
+  <name>dfs.namenode.servicerpc-address</name>
+  <value>a2418.halxg.cloudera.com:8022</value>
+</property>
+<!--<property>
   <name>dfs.secondary.http.address</name>
   <value>0.0.0.0:5000</value>
-</property>
+</property> -->
 <property>
   <name>dfs.datanode.address</name>
-  <value>0.0.0.0:6100</value>
+  <value>a2418.halxg.cloudera.com:6100</value>
 </property>
 <property>
   <name>dfs.http.address</name>
-  <value>0.0.0.0:6001</value>
+  <value>a2418.halxg.cloudera.com:6001</value>
 </property>
 <property>
   <name>dfs.datanode.http.address</name>
-  <value>0.0.0.0:6101</value>
+  <value>a2418.halxg.cloudera.com:6101</value>
 </property>
 <property>
   <name>dfs.datanode.ipc.address</name>
-  <value>0.0.0.0:6102</value>
+  <value>a2418.halxg.cloudera.com:6102</value>
 </property>
 <property>
   <name>dfs.name.dir</name>
