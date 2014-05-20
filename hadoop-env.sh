@@ -7,6 +7,7 @@ die() {
 [ "x$BASH_VERSION" != "x" ] || die "you must source this script in bash"
 export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
+export YARN_LOGFILE="yarn.log"
 
 # Set JAVA_HOME if it isn't already defined.
 export JAVA_HOME="${JAVA_HOME-/usr/java/jdk1.6.0_29}"
@@ -33,8 +34,8 @@ export HADOOP_JOBTRACKER_OPTS="-Dcom.sun.management.jmxremote $HADOOP_JOBTRACKER
 # Extra ssh options.  Empty by default.
 # export HADOOP_SSH_OPTS="-o ConnectTimeout=1 -o SendEnv=HADOOP_CONF_DIR"
 
-export HADOOP_RUN="/r"
-export HADOOP_HOME_BASE="/h"
+export HADOOP_RUN="/data/11/cmccabe"
+export HADOOP_HOME_BASE="/home/cmccabe/h"
 #export HADOOP_HDFS_HOME="${HADOOP_HOME_BASE}"
 
 # Where log files are stored.  $HADOOP_HOME_BASE/logs by default.

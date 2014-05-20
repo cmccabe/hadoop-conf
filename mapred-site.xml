@@ -7,7 +7,7 @@
 </property>
 <property>
   <name>mapred.task.tracker.http.address</name>
-  <value>0.0.0.0:6400</value>
+  <value>0.0.0.0:50060</value>
 </property>
 <property>
   <name>mapred.job.tracker</name>
@@ -15,19 +15,19 @@
 </property>
 <property>
   <name>mapred.local.dir</name>
-  <value>/r/mr/local1/mapred,/r/mr/local2</value>
+  <value>/data/1/cmccabe/mr-local,/data/2/cmccabe/mr-local,/data/3/cmccabe/mr-local,/data/4/cmccabe/mr-local,/data/5/cmccabe/mr-local,/data/6/cmccabe/mr-local,/data/7/cmccabe/mr-local,/data/8/cmccabe/mr-local,/data/9/cmccabe/mr-local,/data/10/cmccabe/mr-local</value>
 </property>
 <property>
   <name>mapred.system.dir</name>
-  <value>/r/mr/system</value>
+  <value>/mapred/system</value>
 </property>
 <property>
   <name>mapreduce.jobtracker.staging.root.dir</name>
-  <value>/r/mr/staging</value>
+  <value>/user</value>
 </property>
 <property>
   <name>mapred.temp.dir</name>
-  <value>/r/mr/tmp</value>
+  <value>/mapred/temp</value>
 </property>
 <property>
   <name>mapreduce.tasktracker.group</name>
@@ -36,10 +36,6 @@
 <property>
   <name>mapred.task.tracker.task-controller</name>
   <value>org.apache.hadoop.mapred.LinuxTaskController</value>
-</property>
-<property>
-  <name>mapreduce.tasktracker.task-controller.exe</name>
-  <value>/h/sbin/task-controller</value>
 </property>
 <!--
 <property>

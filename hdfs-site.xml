@@ -31,19 +31,19 @@
 </property>
 <property>
   <name>dfs.name.dir</name>
-  <value>/r/name1,/r/name2</value>
+  <value>/data/1/cmccabe/nn,/data/2/cmccabe/nn</value>
 </property>
 <property>
   <name>dfs.data.dir</name>
-  <value>/r/data1,/r/data2</value>
+  <value>/data/1/cmccabe/dn,/data/2/cmccabe/dn,/data/3/cmccabe/dn,/data/4/cmccabe/dn,/data/5/cmccabe/dn,/data/6/cmccabe/dn,/data/7/cmccabe/dn,/data/8/cmccabe/dn,/data/9/cmccabe/dn,/data/10/cmccabe/dn</value>
 </property>
 <property>
   <name>fs.checkpoint.dir</name>
-  <value>/r/chkpt1,/r/chkpt2</value>
+  <value>/data/3/cmccabe/checkpoint,/data/4/cmccabe/checkpoint</value>
 </property>
 <property>
   <name>dfs.heartbeat.interval</name>
-  <value>1</value>
+  <value>3</value>
 </property>
 <property>
   <name>fs.checkpoint.period</name>
@@ -57,15 +57,11 @@
 -->
 <property>
   <name>dfs.namenode.name.dir.restore</name>
-  <value>true</value>
+  <value>false</value>
 </property>
 <property>
   <name>dfs.datanode.scan.period.hours</name>
-  <value>1</value>
-</property>
-<property>
-  <name>dfs.client.buffer.dir</name>
-  <value>/r/buffer</value>
+  <value>168</value>
 </property>
 <property>
   <name>dfs.datanode.directoryscan.threads</name>
@@ -77,7 +73,7 @@
 </property>
 <property>
   <name>dfs.domain.socket.path</name>
-  <value>/r/sock</value>
+  <value>/var/lib/hadoop-hdfs/sock._PORT</value>
 </property>
 <property>
   <name>dfs.datanode.max.locked.memory</name>

@@ -6,18 +6,18 @@
     here. -->
     <property>
       <name>fs.default.name</name>
-      <value>hdfs://localhost:6000</value>
+      <value>hdfs://a2402.halxg.cloudera.com:6000</value>
     </property>
     <property>
       <name>hadoop.tmp.dir</name>
-      <value>/h/tmp</value>
+      <value>/data/11/cmccabe/tmp</value>
     </property>
     <property>
       <name>hadoop.log.dir</name>
-      <value>/r/logs</value>
+      <value>/data/11/cmccabe/logs</value>
     </property>
-    <property>
+    <!--<property>
       <name>hadoop.security.group.mapping</name>
-      <value>org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback</value>
-    </property>
+      <value>org.apache.hadoop.security.JniBasedUnixGroupsMapping</value>
+  </property> -->
 </configuration>

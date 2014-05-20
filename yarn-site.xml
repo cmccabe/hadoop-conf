@@ -3,7 +3,7 @@
 <configuration>
   <property>
     <name>yarn.nodemanager.aux-services</name>
-    <value>mapreduce.shuffle</value>
+    <value>mapreduce_shuffle</value>
   </property>
 
   <property>
@@ -13,22 +13,37 @@
 
   <property>
     <name>yarn.resourcemanager.resource-tracker.address</name>
-    <value>0.0.0.0:9090</value>
+    <value>a2402.halxg.cloudera.com:9090</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.user-as-default-queue</name>
+    <value>true</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.scheduler.address</name>
-    <value>0.0.0.0:9095</value>
+    <value>a2402.halxg.cloudera.com:8030</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>20480</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.address</name>
-    <value>0.0.0.0:9096</value>
+    <value>a2402.halxg.cloudera.com:9096</value>
   </property>
 
   <property>
     <name>yarn.nodemanager.local-dirs</name>
-    <value>/r/rsman</value>
+    <value>/data/11/cmccabe/nodeman</value>
   </property>
 
   <property>
@@ -38,16 +53,16 @@
 
   <property>
     <name>yarn.nodemanager.resource.memory-mb</name>
-    <value>10240</value>
+    <value>20480</value>
   </property>
  
   <property>
     <name>yarn.nodemanager.remote-app-log-dir</name>
-    <value>/r/nodeman</value>
+    <value>/data/11/cmccabe/applog</value>
   </property>
 
    <property>
     <name>yarn.nodemanager.log-dirs</name>
-    <value>/r/nodelog</value>
+    <value>/data/11/cmccabe/nodelog</value>
   </property>
 </configuration>
