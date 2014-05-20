@@ -61,8 +61,13 @@
     <value>/data/11/cmccabe/applog</value>
   </property>
 
-   <property>
+  <property>
     <name>yarn.nodemanager.log-dirs</name>
     <value>/data/11/cmccabe/nodelog</value>
+  </property>
+
+  <property>
+    <name>yarn.application.classpath</name>
+    <value>/home/cmccabe/conf</value>
   </property>
 </configuration>
