@@ -1,23 +1,32 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <configuration>
-    <!-- WARNING: anything you put here may be overwritten by HDFS defaults!
-    Still, you have to put configuration options that clients also need in
-    here. -->
-    <property>
-      <name>fs.default.name</name>
-      <value>hdfs://localhost:6000</value>
-    </property>
-    <property>
-      <name>hadoop.tmp.dir</name>
-      <value>/h/tmp</value>
-    </property>
-    <property>
-      <name>hadoop.log.dir</name>
-      <value>/r/logs</value>
-    </property>
-    <property>
-      <name>hadoop.security.group.mapping</name>
-      <value>org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback</value>
-    </property>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://a2402.halxg.cloudera.com:6000</value>
+  </property>
+  <!--<property>
+    <name>net.topology.script.file.name</name>
+    <value>/etc/hadoop/conf.cloudera.YARN-1/topology.py</value>
+  </property> -->
+  <property>
+    <name>io.compression.codecs</name>
+    <value>org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.BZip2Codec,org.apache.hadoop.io.compress.DeflateCodec,org.apache.hadoop.io.compress.SnappyCodec,org.apache.hadoop.io.compress.Lz4Codec</value>
+  </property>
+  <property>
+    <name>io.file.buffer.size</name>
+    <value>65536</value>
+  </property>
+  <property>
+    <name>hadoop.security.authentication</name>
+    <value>simple</value>
+  </property>
+  <property>
+    <name>hadoop.rpc.protection</name>
+    <value>authentication</value>
+  </property>
+  <property>
+    <name>hadoop.security.auth_to_local</name>
+    <value>DEFAULT</value>
+  </property>
 </configuration>

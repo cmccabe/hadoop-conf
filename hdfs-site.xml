@@ -1,86 +1,40 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <configuration>
-<property>
-  <name>dfs.hosts.exclude</name>
-  <value>/home/cmccabe/conf/exclude.txt</value>
-</property>
-<property>
-  <name>dfs.webhdfs.enabled</name>
-  <value>true</value>
-</property>
-<property>
-  <name>dfs.secondary.http.address</name>
-  <value>0.0.0.0:5000</value>
-</property>
-<property>
-  <name>dfs.datanode.address</name>
-  <value>0.0.0.0:6100</value>
-</property>
-<property>
-  <name>dfs.http.address</name>
-  <value>0.0.0.0:6001</value>
-</property>
-<property>
-  <name>dfs.datanode.http.address</name>
-  <value>0.0.0.0:6101</value>
-</property>
-<property>
-  <name>dfs.datanode.ipc.address</name>
-  <value>0.0.0.0:6102</value>
-</property>
-<property>
-  <name>dfs.name.dir</name>
-  <value>/r/name1,/r/name2</value>
-</property>
-<property>
-  <name>dfs.data.dir</name>
-  <value>/r/data1,/r/data2</value>
-</property>
-<property>
-  <name>fs.checkpoint.dir</name>
-  <value>/r/chkpt1,/r/chkpt2</value>
-</property>
-<property>
-  <name>dfs.heartbeat.interval</name>
-  <value>1</value>
-</property>
-<property>
-  <name>fs.checkpoint.period</name>
-  <value>500000</value>
-</property>
-<!--
-<property>
-  <name>dfs.datanode.failed.volumes.tolerated</name>
-  <value>1</value>
-</property>
--->
-<property>
-  <name>dfs.namenode.name.dir.restore</name>
-  <value>true</value>
-</property>
-<property>
-  <name>dfs.datanode.scan.period.hours</name>
-  <value>1</value>
-</property>
-<property>
-  <name>dfs.client.buffer.dir</name>
-  <value>/r/buffer</value>
-</property>
-<property>
-  <name>dfs.datanode.directoryscan.threads</name>
-  <value>1</value>
-</property>
-<property>
-  <name>dfs.client.read.shortcircuit</name>
-  <value>true</value>
-</property>
-<property>
-  <name>dfs.domain.socket.path</name>
-  <value>/r/sock</value>
-</property>
-<property>
-  <name>dfs.datanode.max.locked.memory</name>
-  <value>25301430272</value>
-</property>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+    <name>dfs.blocksize</name>
+    <value>134217728</value>
+  </property>
+  <property>
+    <name>dfs.client.use.datanode.hostname</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>fs.permissions.umask-mode</name>
+    <value>022</value>
+  </property>
+  <!--<property>
+    <name>dfs.client.read.shortcircuit</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>dfs.domain.socket.path</name>
+    <value>/var/run/hdfs-sockets/dn</value>
+  </property>
+  <property>
+    <name>dfs.client.read.shortcircuit.skip.checksum</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>dfs.client.domain.socket.data.traffic</name>
+    <value>false</value>
+  </property>
+  <property> -->
+    <name>dfs.datanode.hdfs-blocks-metadata.enabled</name>
+    <value>true</value>
+  </property>
 </configuration>
