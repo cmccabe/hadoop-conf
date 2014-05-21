@@ -12,11 +12,6 @@
   </property>
 
   <property>
-    <name>yarn.resourcemanager.resource-tracker.address</name>
-    <value>a2402.halxg.cloudera.com:9090</value>
-  </property>
-
-  <property>
     <name>yarn.resourcemanager.scheduler.class</name>
     <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
   </property>
@@ -24,11 +19,6 @@
   <property>
     <name>yarn.scheduler.fair.user-as-default-queue</name>
     <value>true</value>
-  </property>
-
-  <property>
-    <name>yarn.resourcemanager.scheduler.address</name>
-    <value>a2402.halxg.cloudera.com:8030</value>
   </property>
 
   <property>
@@ -41,6 +31,26 @@
     <value>a2402.halxg.cloudera.com:9096</value>
   </property>
 
+  <property>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value>a2402.halxg.cloudera.com:8033</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>a2402.halxg.cloudera.com:8030</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>a2402.halxg.cloudera.com:8031</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>a2402.halxg.cloudera.com:8088</value>
+  </property>
+ 
   <property>
     <name>yarn.nodemanager.local-dirs</name>
     <value>/data/11/cmccabe/nodeman</value>
