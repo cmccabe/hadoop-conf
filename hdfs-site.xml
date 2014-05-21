@@ -32,8 +32,8 @@
   <property>
     <name>dfs.client.domain.socket.data.traffic</name>
     <value>false</value>
-  </property>
-  <property> -->
+  </property> -->
+  <property>
     <name>dfs.datanode.hdfs-blocks-metadata.enabled</name>
     <value>true</value>
   </property>
