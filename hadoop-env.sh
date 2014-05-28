@@ -65,3 +65,6 @@ export HADOOP_PID_DIR="${HADOOP_RUN}/pids"
 export HADOOP_SECURE_DN_PID_DIR=""
 export HADOOP_SECURE_DN_LOG_DIR=""
 export HADOOP_SECURE_DN_USER=""
+
+# add Spark stuff
+source "${HADOOP_CONF_DIR}/spark-env.sh"
