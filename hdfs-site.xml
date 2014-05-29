@@ -79,4 +79,10 @@
   <name>dfs.datanode.max.locked.memory</name>
   <value>25301430272</value>
 </property>
+<!-- Don't linger in safe mode a long time.  This makes it easy to restart a
+small cluster a lot for testing. -->
+<property>
+  <name>dfs.namenode.safemode.extension</name>
+  <value>500</value>
+</property>
 </configuration>
