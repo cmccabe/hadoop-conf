@@ -7,6 +7,11 @@
   </property>
 
   <property>
+    <name>yarn.log-aggregation-enable</name>
+    <value>false</value>
+  </property>
+
+  <property>
     <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
     <value>org.apache.hadoop.mapred.ShuffleHandler</value>
   </property>
@@ -22,10 +27,20 @@
   </property>
 
   <property>
-    <name>yarn.scheduler.maximum-allocation-mb</name>
-    <value>20480</value>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>2048</value>
   </property>
 
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>12288</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>40960</value>
+  </property>
+ 
   <property>
     <name>yarn.resourcemanager.address</name>
     <value>a2402.halxg.cloudera.com:9096</value>
@@ -62,11 +77,6 @@
   </property>  
 
   <property>
-    <name>yarn.nodemanager.resource.memory-mb</name>
-    <value>20480</value>
-  </property>
- 
-  <property>
     <name>yarn.nodemanager.remote-app-log-dir</name>
     <value>/data/11/cmccabe/applog</value>
   </property>
@@ -79,5 +89,11 @@
   <property>
     <name>yarn.application.classpath</name>
     <value>/home/cmccabe/conf</value>
+  </property>
+
+  <!-- Multiple AM attempts can get annoying. -->
+  <property>
+    <name>yarn.resourcemanager.am.max-attempts</name>
+    <value>1</value>
   </property>
 </configuration>
