@@ -4,9 +4,11 @@ KILL_PARAMS="$@"
 
 jps | while read line; do
     if [[ "$line" =~ sbt-launch.jar ]]; then
-        : # do nothing
+        : # Don't kill the sbt shell.
     elif [[ "$line" =~ Jps ]]; then
-        : # do nothing
+        : # Trying to kill our own jps process is not helpful.  Do nothing
+    elif [[ "$line" =~ bootstrap.jar ]]; then
+        : # mvnsh uses this name (for some reason)... do nothing.
     else
         echo "kill ${KILL_PARAMS} ${line}"
         line=${line/ */}
