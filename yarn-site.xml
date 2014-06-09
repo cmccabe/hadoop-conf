@@ -68,7 +68,7 @@
  
   <property>
     <name>yarn.nodemanager.local-dirs</name>
-    <value>/data/11/cmccabe/nodeman</value>
+    <value>/data/1/cmccabe/mr-local,/data/2/cmccabe/mr-local,/data/3/cmccabe/mr-local,/data/4/cmccabe/mr-local,/data/5/cmccabe/mr-local,/data/6/cmccabe/mr-local,/data/7/cmccabe/mr-local,/data/8/cmccabe/mr-local,/data/9/cmccabe/mr-local,/data/10/cmccabe/mr-local</value>
   </property>
 
   <property>
