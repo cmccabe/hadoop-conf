@@ -16,8 +16,8 @@
       <name>hadoop.log.dir</name>
       <value>/r/logs</value>
     </property>
-    <property>
+    <!--<property>
       <name>hadoop.security.group.mapping</name>
       <value>org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback</value>
-    </property>
+    </property> -->
 </configuration>

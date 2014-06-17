@@ -31,15 +31,15 @@
 </property>
 <property>
   <name>dfs.name.dir</name>
-  <value>/r/name1,/r/name2</value>
+  <value>/r/name1</value>
 </property>
 <property>
   <name>dfs.data.dir</name>
-  <value>/r/data1,/r/data2</value>
+  <value>/r/data1</value>
 </property>
 <property>
   <name>fs.checkpoint.dir</name>
-  <value>/r/chkpt1,/r/chkpt2</value>
+  <value>/r/chkpt1</value>
 </property>
 <property>
   <name>dfs.heartbeat.interval</name>
@@ -82,5 +82,9 @@
 <property>
   <name>dfs.datanode.max.locked.memory</name>
   <value>25301430272</value>
+</property>
+<property>
+  <name>dfs.namenode.acls.enabled</name>
+  <value>true</value>
 </property>
 </configuration>
