@@ -1,7 +1,7 @@
 #!/bin/bash -x -e
 
 # Drop mystery packets from a2424
-sudo iptables -A INPUT -s 10.20.212.32 -j DROP
+#sudo iptables -A INPUT -s 10.20.212.32 -j DROP
 
 # Shut down other services
 sudo service cloudera-scm-server stop 
