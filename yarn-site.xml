@@ -2,6 +2,11 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
   <property>
+    <name>yarn.resourcemanager.nodes.exclude-path</name>
+    <value>/home/cmccabe/conf/exclude.txt</value>
+  </property>
+
+  <property>
     <name>yarn.nodemanager.aux-services</name>
     <value>mapreduce_shuffle</value>
   </property>
