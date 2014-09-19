@@ -83,4 +83,12 @@
   <name>dfs.datanode.max.locked.memory</name>
   <value>25301430272</value>
 </property>
+<property>
+  <name>default.native.handler</name>
+  <value>ndfs</value>
+</property>
+<property>
+  <name>dfs.replication</name>
+  <value>1</value>
+</property>
 </configuration>

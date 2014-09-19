@@ -6,7 +6,7 @@
     here. -->
     <property>
       <name>fs.default.name</name>
-      <value>hdfs://localhost:6000</value>
+      <value>hdfs://localhost</value>
     </property>
     <property>
       <name>hadoop.tmp.dir</name>
@@ -16,8 +16,8 @@
       <name>hadoop.log.dir</name>
       <value>/r/logs</value>
     </property>
-    <property>
+    <!--<property>
       <name>hadoop.security.group.mapping</name>
       <value>org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback</value>
-    </property>
+    </property>-->
 </configuration>
