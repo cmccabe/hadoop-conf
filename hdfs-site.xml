@@ -91,4 +91,8 @@
   <name>dfs.replication</name>
   <value>1</value>
 </property>
+<property>
+  <name>dfs.client.trace.sampler</name>
+  <value>AlwaysSampler</value>
+</property>
 </configuration>
