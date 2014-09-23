@@ -73,7 +73,7 @@
 </property>
 <property>
   <name>dfs.client.read.shortcircuit</name>
-  <value>true</value>
+  <value>false</value>
 </property>
 <property>
   <name>dfs.domain.socket.path</name>
@@ -94,5 +94,9 @@
 <property>
   <name>dfs.client.trace.sampler</name>
   <value>AlwaysSampler</value>
+</property>
+<property>
+  <name>hadoop.trace.spanreceiver.classes</name>
+  <value>LocalFileSpanReceiver</value>
 </property>
 </configuration>
