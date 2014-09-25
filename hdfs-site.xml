@@ -91,4 +91,25 @@
   <name>dfs.replication</name>
   <value>1</value>
 </property>
+<property>
+  <name>dfs.datanode.ram.disk.replica.tracker</name>
+  <value>org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.RamDiskReplicaLruTracker</value>
+  <!--<value>org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.RamDiskReplica2QTracker</value> -->
+</property>
+<property>
+  <name>dfs.datanode.lazywriter.interval.sec</name>
+  <value>60</value>
+</property>
+<property>
+  <name>dfs.namenode.lazypersist.file.scrub.interval.sec</name>
+  <value>300</value>
+</property>
+<property>
+  <name>dfs.datanode.ram.disk.low.watermark.percent</name>
+  <value>10</value>
+</property>
+<property>
+  <name>dfs.datanode.ram.disk.low.watermark.replicas</name>
+  <value>3</value>
+</property>
 </configuration>
