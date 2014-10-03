@@ -92,11 +92,15 @@
   <value>1</value>
 </property>
 <property>
-  <name>dfs.client.trace.sampler</name>
+  <name>hadoop.htrace.sampler</name>
   <value>AlwaysSampler</value>
 </property>
 <property>
-  <name>hadoop.trace.spanreceiver.classes</name>
+  <name>hadoop.htrace.local-file-span-receiver.capacity</name>
+  <value>1</value>
+</property>
+<property>
+  <name>hadoop.htrace.spanreceiver.classes</name>
   <value>LocalFileSpanReceiver</value>
 </property>
 </configuration>
