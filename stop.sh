@@ -9,6 +9,8 @@ jps | while read line; do
         : # Trying to kill our own jps process is not helpful.  Do nothing
     elif [[ "$line" =~ bootstrap.jar ]]; then
         : # mvnsh uses this name (for some reason)... do nothing.
+    elif [[ "$line" =~ Launcher ]]; then
+        : # skip ongoing maven invocations
     else
         echo "kill ${KILL_PARAMS} ${line}"
         line=${line/ */}
