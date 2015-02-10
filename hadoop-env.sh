@@ -64,3 +64,6 @@ export HADOOP_PID_DIR="${HADOOP_RUN}/pids"
 export HADOOP_SECURE_DN_PID_DIR=""
 export HADOOP_SECURE_DN_LOG_DIR=""
 export HADOOP_SECURE_DN_USER=""
+
+export HTRACED_CONF_DIR=/home/cmccabe/conf
+export HTRACED_PID_FILE=/r/pids/htraced.pid
