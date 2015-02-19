@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>log.path</name>
+    <value>/data/11/cmccabe/logs/htraced.log</value>
+  </property>
+  <property>
+    <name>web.address</name>
+    <value>a2402.halxg.cloudera.com:9095</value>
+  </property>
+  <property>
+    <name>data.store.directories</name>
+    <value>/data/4/cmccabe/htraced;/data/5/cmccabe/htraced;/data/6/cmccabe/htraced;/data/7/cmccabe/htraced;/data/8/cmccabe/htraced;/data/9/cmccabe/htraced;/data/10/cmccabe/htraced</value>
+  </property>
+  <property>
+    <name>data.store.clear</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>data.store.span.buffer.size</name>
+    <value>100</value>
+  </property>
+</configuration>
