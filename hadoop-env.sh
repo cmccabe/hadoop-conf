@@ -6,7 +6,12 @@ die() {
 }
 [ "x$BASH_VERSION" != "x" ] || die "you must source this script in bash"
 export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+export HTRACED_CONF_DIR="${HADOOP_CONF_DIR}"
 export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
+
+export SLAVES="a2404.halxg.cloudera.com a2406.halxg.cloudera.com a2408.halxg.cloudera.com a2424.halxg.cloudera.com"
+export MASTER="a2402.halxg.cloudera.com"
+export HOSTS="${MASTER} ${SLAVES}"
 
 # Set JAVA_HOME if it isn't already defined.
 export JAVA_HOME="${JAVA_HOME-/usr/java/jdk1.6.0_29}"
@@ -33,12 +38,12 @@ export HADOOP_JOBTRACKER_OPTS="-Dcom.sun.management.jmxremote $HADOOP_JOBTRACKER
 # Extra ssh options.  Empty by default.
 # export HADOOP_SSH_OPTS="-o ConnectTimeout=1 -o SendEnv=HADOOP_CONF_DIR"
 
-export HADOOP_RUN="/r"
-export HADOOP_HOME_BASE="/h"
+#export HADOOP_RUN="/r"
+export HADOOP_HOME_BASE="/home/cmccabe/sync/hadoop"
 #export HADOOP_HDFS_HOME="${HADOOP_HOME_BASE}"
 
 # Where log files are stored.  $HADOOP_HOME_BASE/logs by default.
-export HADOOP_LOG_DIR="${HADOOP_RUN}/logs"
+#export HADOOP_LOG_DIR="${HADOOP_RUN}/logs"
 
 # File naming remote slave hosts.  $HADOOP_HOME_BASE/conf/slaves by default.
 #export HADOOP_SLAVES="${HADOOP_CONF_DIR}/slaves"
@@ -52,7 +57,7 @@ export HADOOP_LOG_DIR="${HADOOP_RUN}/logs"
 # export HADOOP_SLAVE_SLEEP=0.1
 
 # The directory where pid files are stored. /tmp by default.
-export HADOOP_PID_DIR="${HADOOP_RUN}/pids"
+#export HADOOP_PID_DIR="${HADOOP_RUN}/pids"
 
 # A string representing this instance of hadoop. $USER by default.
 # export HADOOP_IDENT_STRING=$USER
