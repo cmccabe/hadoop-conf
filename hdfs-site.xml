@@ -92,4 +92,8 @@
   <value>org.apache.htrace.impl.LocalFileSpanReceiver</value>
   <!--<value>org.apache.htrace.impl.HTracedRESTReceiver</value> -->
 </property>
+<property>
+  <name>hadoop.htrace.sampler</name>
+  <value>AlwaysSampler</value>
+</property>
 </configuration>
