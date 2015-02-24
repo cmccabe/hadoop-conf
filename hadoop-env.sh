@@ -11,6 +11,11 @@ export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
 
 export SLAVES="a2404.halxg.cloudera.com a2406.halxg.cloudera.com a2408.halxg.cloudera.com a2424.halxg.cloudera.com"
 export MASTER="a2402.halxg.cloudera.com"
+if [[ `hostname` =~ a2402 ]]; then
+    export IS_MASTER=1
+else
+    export IS_MASTER=0
+fi
 export HOSTS="${MASTER} ${SLAVES}"
 
 # Set JAVA_HOME if it isn't already defined.
@@ -43,7 +48,7 @@ export HADOOP_HOME_BASE="/home/cmccabe/sync/hadoop"
 #export HADOOP_HDFS_HOME="${HADOOP_HOME_BASE}"
 
 # Where log files are stored.  $HADOOP_HOME_BASE/logs by default.
-#export HADOOP_LOG_DIR="${HADOOP_RUN}/logs"
+export HADOOP_LOG_DIR="/data/11/cmccabe/logs/"
 
 # File naming remote slave hosts.  $HADOOP_HOME_BASE/conf/slaves by default.
 #export HADOOP_SLAVES="${HADOOP_CONF_DIR}/slaves"

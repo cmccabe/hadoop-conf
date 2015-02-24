@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-set -xe
-killall "$@" java
-killall "$@" htraced
+set -x
+killall -q "$@" java
+killall -q "$@" htraced
