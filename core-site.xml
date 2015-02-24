@@ -13,15 +13,6 @@
     <value>/data/11/cmccabe/tmp</value>
   </property>
   <property>
-    <name>hadoop.log.dir</name>
-    <value>/data/11/cmccabe/logs</value>
-  </property>
-  <property>
-    <!-- will be overridden by specific daemons -->
-    <name>hadoop.log.file</name>
-    <value>hadoop</value>
-  </property>
-  <property>
     <name>hadoop.security.group.mapping</name>
     <value>org.apache.hadoop.security.JniBasedUnixGroupsMapping</value>
   </property>
