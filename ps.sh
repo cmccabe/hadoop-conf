@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 jps
-pidof htraced
+HTRACED_PID=`/sbin/pidof htraced`
+[ $? -eq 0 ] && echo "$HTRACED_PID htraced"
