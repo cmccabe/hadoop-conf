@@ -2,6 +2,10 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
   <property>
+    <name>log.level</name>
+    <value>TRACE</value>
+  </property>
+  <property>
     <name>log.path</name>
     <value>/data/11/cmccabe/logs/htraced.log</value>
   </property>
