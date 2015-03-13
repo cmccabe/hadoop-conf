@@ -89,11 +89,11 @@
 </property>
 <property>
   <name>hadoop.htrace.spanreceiver.classes</name>
-  <!--<value>org.apache.htrace.impl.LocalFileSpanReceiver</value> -->
-  <!--<value>org.apache.htrace.impl.HTracedRESTReceiver</value>-->
+  <!-- <value>org.apache.htrace.impl.LocalFileSpanReceiver</value> -->
+  <value>org.apache.htrace.impl.HTracedRESTReceiver</value>
 </property>
 <property>
-  <name>htraced.rest.url</name>
+  <name>hadoop.htrace.htraced.rest.url</name>
   <value>http://a2402.halxg.cloudera.com:9095/</value>
 </property>
 <property>
