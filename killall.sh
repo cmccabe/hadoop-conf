@@ -5,6 +5,7 @@ jps | while read LINE; do
     NAME=`echo $LINE | awk '{print $2}'`
     #echo "$ID = $NAME"
     case $NAME in
+        Launcher) ;;
         bootstrap.jar) ;;
         Jps) ;;
         *) kill $ID ;;
