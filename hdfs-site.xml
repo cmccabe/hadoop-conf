@@ -88,16 +88,16 @@
   <value>3</value>
 </property>
 <property>
-  <name>hadoop.htrace.spanreceiver.classes</name>
+  <name>dfs.htrace.spanreceiver.classes</name>
   <!-- <value>org.apache.htrace.impl.LocalFileSpanReceiver</value> -->
   <value>org.apache.htrace.impl.HTracedRESTReceiver</value>
 </property>
 <property>
-  <name>hadoop.htrace.htraced.rest.url</name>
+  <name>dfs.htrace.htraced.rest.url</name>
   <value>http://a2402.halxg.cloudera.com:9095/</value>
 </property>
 <property>
-  <name>hadoop.htrace.sampler</name>
+  <name>dfs.htrace.sampler</name>
   <value>AlwaysSampler</value>
 </property>
 </configuration>
