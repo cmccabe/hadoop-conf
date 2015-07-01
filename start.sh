@@ -17,7 +17,7 @@ launch_htraced() {
         /usr/sbin/daemonize \
             -p /data/11/cmccabe/pids/htraced.pid \
             -l /data/11/cmccabe/pids/htraced.pid \
-            /home/cmccabe/htrace/htrace-htraced/src/go/build/htraced
+            /home/cmccabe/htrace/htrace-htraced/go/build/htraced
 }
 
 if [ $IS_MASTER -ne 0 ]; then
