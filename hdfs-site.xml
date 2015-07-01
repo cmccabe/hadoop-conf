@@ -87,6 +87,12 @@
   <name>dfs.replication</name>
   <value>3</value>
 </property>
+
+<!-- Daemon HTrace configuration -->
+<property>
+  <name>dfs.htrace.sampler</name>
+  <value>NeverSampler</value>
+</property>
 <property>
   <name>dfs.htrace.spanreceiver.classes</name>
   <!-- <value>org.apache.htrace.impl.LocalFileSpanReceiver</value> -->
@@ -96,8 +102,19 @@
   <name>dfs.htrace.htraced.rest.url</name>
   <value>http://a2402.halxg.cloudera.com:9095/</value>
 </property>
+
+<!-- Client HTrace configuration -->
 <property>
-  <name>dfs.htrace.sampler</name>
+  <name>dfs.client.htrace.sampler</name>
   <value>AlwaysSampler</value>
+</property>
+<property>
+  <name>dfs.client.htrace.spanreceiver.classes</name>
+  <!-- <value>org.apache.htrace.impl.LocalFileSpanReceiver</value> -->
+  <value>org.apache.htrace.impl.HTracedRESTReceiver</value>
+</property>
+<property>
+  <name>dfs.client.htrace.htraced.rest.url</name>
+  <value>http://a2402.halxg.cloudera.com:9095/</value>
 </property>
 </configuration>

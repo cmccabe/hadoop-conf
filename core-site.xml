@@ -16,4 +16,19 @@
     <name>hadoop.security.group.mapping</name>
     <value>org.apache.hadoop.security.JniBasedUnixGroupsMapping</value>
   </property>
+
+  <!-- Shell HTrace configuration -->
+  <property>
+    <name>dfs.shell.htrace.sampler</name>
+    <value>AlwaysSampler</value>
+  </property>
+  <property>
+    <name>dfs.shell.htrace.spanreceiver.classes</name>
+    <!-- <value>org.apache.htrace.impl.LocalFileSpanReceiver</value> -->
+    <value>org.apache.htrace.impl.HTracedRESTReceiver</value>
+  </property>
+  <property>
+    <name>dfs.shell.htrace.htraced.rest.url</name>
+    <value>http://a2402.halxg.cloudera.com:9095/</value>
+  </property>
 </configuration>
