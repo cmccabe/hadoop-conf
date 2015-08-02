@@ -15,7 +15,7 @@
   </property>
   <property>
     <name>data.store.directories</name>
-    <value>/data/4/cmccabe/htraced;/data/5/cmccabe/htraced;/data/6/cmccabe/htraced;/data/7/cmccabe/htraced;/data/8/cmccabe/htraced;/data/9/cmccabe/htraced;/data/10/cmccabe/htraced</value>
+    <value>/data/1/cmccabe/htraced:/data/2/cmccabe/htraced:/data/3/cmccabe/htraced:/data/4/cmccabe/htraced:/data/5/cmccabe/htraced:/data/6/cmccabe/htraced:/data/7/cmccabe/htraced:/data/8/cmccabe/htraced:/data/9/cmccabe/htraced:/data/10/cmccabe/htraced</value>
   </property>
   <property>
     <name>data.store.clear</name>
