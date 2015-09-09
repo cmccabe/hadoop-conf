@@ -17,18 +17,21 @@
     <value>org.apache.hadoop.security.JniBasedUnixGroupsMapping</value>
   </property>
 
-  <!-- Shell HTrace configuration -->
+  <!-- HTrace configuration -->
   <property>
-    <name>dfs.shell.htrace.sampler</name>
+    <name>hadoop.htrace.span.receiver.classes</name>
+    <value>org.apache.htrace.impl.HTracedSpanReceiver</value>
+  </property>
+  <property>
+    <name>hadoop.htrace.htraced.receiver.address</name>
+    <value>a2402.halxg.cloudera.com:9075</value>
+  </property>
+  <property>
+    <name>hadoop.htrace.htraced.error.log.period.ms</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>fs.shell.htrace.sampler.classes</name>
     <value>AlwaysSampler</value>
-  </property>
-  <property>
-    <name>dfs.shell.htrace.spanreceiver.classes</name>
-    <!-- <value>org.apache.htrace.impl.LocalFileSpanReceiver</value> -->
-    <value>org.apache.htrace.impl.HTracedRESTReceiver</value>
-  </property>
-  <property>
-    <name>dfs.shell.htrace.htraced.rest.url</name>
-    <value>http://a2402.halxg.cloudera.com:9095/</value>
   </property>
 </configuration>
