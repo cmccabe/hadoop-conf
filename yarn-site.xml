@@ -13,22 +13,22 @@
 
   <property>
     <name>yarn.resourcemanager.resource-tracker.address</name>
-    <value>0.0.0.0:7031</value>
+    <value>10.20.212.10:7031</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.scheduler.address</name>
-    <value>0.0.0.0:7030</value>
+    <value>10.20.212.10:7030</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.address</name>
-    <value>0.0.0.0:7032</value>
+    <value>10.20.212.10:7032</value>
   </property>
 
   <property>
     <name>yarn.nodemanager.local-dirs</name>
-    <value>/r/rsman</value>
+    <value>/data/11/cmccabe/nodeman</value>
   </property>
 
   <property>
@@ -43,7 +43,7 @@
  
   <property>
     <name>yarn.nodemanager.remote-app-log-dir</name>
-    <value>/data/11/cmccabe/nodeman/</value>
+    <value>/data/11/cmccabe/applog</value>
   </property>
 
    <property>
