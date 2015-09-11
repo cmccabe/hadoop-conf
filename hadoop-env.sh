@@ -8,6 +8,7 @@ die() {
 export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 export HTRACED_CONF_DIR="${HADOOP_CONF_DIR}"
 export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
+export HADOOP_NAMENODE_OPTS="-Xms40g -Xmx40g"
 
 export SLAVES="a2404.halxg.cloudera.com a2406.halxg.cloudera.com a2408.halxg.cloudera.com a2424.halxg.cloudera.com"
 export MASTER="a2402.halxg.cloudera.com"
