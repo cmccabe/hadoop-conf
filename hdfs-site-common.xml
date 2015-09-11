@@ -14,28 +14,12 @@
   <value>a2402.halxg.cloudera.com:50090</value>
 </property>
 <property>
-  <name>dfs.datanode.address</name>
-  <value>0.0.0.0:50010</value>
-</property>
-<property>
   <name>dfs.namenode.http-address</name>
   <value>a2402.halxg.cloudera.com:50070</value>
 </property>
 <property>
-  <name>dfs.datanode.http.address</name>
-  <value>0.0.0.0:50075</value>
-</property>
-<property>
-  <name>dfs.datanode.ipc.address</name>
-  <value>0.0.0.0:50020</value>
-</property>
-<property>
   <name>dfs.name.dir</name>
   <value>/data/1/cmccabe/nn,/data/2/cmccabe/nn</value>
-</property>
-<property>
-  <name>dfs.data.dir</name>
-  <value>/data/1/cmccabe/dn,/data/2/cmccabe/dn,/data/3/cmccabe/dn,/data/4/cmccabe/dn,/data/5/cmccabe/dn,/data/6/cmccabe/dn,/data/7/cmccabe/dn,/data/8/cmccabe/dn,/data/9/cmccabe/dn,/data/10/cmccabe/dn</value>
 </property>
 <property>
   <name>fs.checkpoint.dir</name>
@@ -77,7 +61,7 @@
 </property>
 <property>
   <name>dfs.domain.socket.path</name>
-  <value>/var/lib/hadoop-hdfs/dn.sock</value>
+  <value>/var/lib/hadoop-hdfs/dn.socket._PORT</value>
 </property>
 <property>
   <name>dfs.datanode.max.locked.memory</name>

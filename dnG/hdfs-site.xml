@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration xmlns:xi="http://www.w3.org/2001/XInclude">
+  <property>
+    <name>dfs.datanode.address</name>
+    <value>0.0.0.0:51106</value>
+  </property>
+  <property>
+    <name>dfs.datanode.http.address</name>
+    <value>0.0.0.0:52206</value>
+  </property>
+  <property>
+    <name>dfs.datanode.ipc.address</name>
+    <value>0.0.0.0:53306</value>
+  </property>
+  <property>
+    <name>dfs.data.dir</name>
+    <value>/data/1/cmccabe/dnG,/data/2/cmccabe/dnG,/data/3/cmccabe/dnG,/data/4/cmccabe/dnG,/data/5/cmccabe/dnG,/data/6/cmccabe/dnG,/data/7/cmccabe/dnG,/data/8/cmccabe/dnG,/data/9/cmccabe/dnG,/data/10/cmccabe/dnG</value>
+  </property>
+  <xi:include href="../hdfs-site-common.xml" />
+</configuration>
