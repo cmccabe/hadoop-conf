@@ -5,7 +5,11 @@ die() {
     exit 1
 }
 [ "x$BASH_VERSION" != "x" ] || die "you must source this script in bash"
-export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+if [ -n "$HADOOP_CONF_DIR" ]; then
+    :
+else
+    export HADOOP_CONF_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 export HTRACED_CONF_DIR="${HADOOP_CONF_DIR}"
 export YARN_CONF_DIR="${HADOOP_CONF_DIR}"
 export HADOOP_NAMENODE_OPTS="-Xms40g -Xmx40g"
