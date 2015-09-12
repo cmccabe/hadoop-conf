@@ -5,6 +5,18 @@
   <name>dfs.hosts.exclude</name>
   <value>/home/cmccabe/conf/exclude.txt</value>
 </property>
+<!--<property>
+  <name>dfs.hosts</name>
+  <value>/home/cmccabe/conf/include.txt</value>
+</property> -->
+<property>
+  <name>dfs.namenode.handler.count</name>
+  <value>50</value>
+</property>
+<property>
+  <name>ipc.server.read.threadpool.size</name>
+  <value>8</value>
+</property>
 <property>
   <name>dfs.webhdfs.enabled</name>
   <value>true</value>

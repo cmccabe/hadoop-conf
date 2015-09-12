@@ -17,5 +17,5 @@
     <name>dfs.data.dir</name>
     <value>/data/1/cmccabe/dnB,/data/2/cmccabe/dnB,/data/3/cmccabe/dnB,/data/4/cmccabe/dnB,/data/5/cmccabe/dnB,/data/6/cmccabe/dnB,/data/7/cmccabe/dnB,/data/8/cmccabe/dnB,/data/9/cmccabe/dnB,/data/10/cmccabe/dnB</value>
   </property>
-  <xi:include href="../hdfs-site-common.xml" />
+  <xi:include href="../hdfs-site.xml" />
 </configuration>
