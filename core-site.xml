@@ -20,4 +20,20 @@
       <name>hadoop.security.group.mapping</name>
       <value>org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback</value>
     </property>-->
+    <property>
+      <name>fs.shell.htrace.sampler.classes</name>
+      <value>AlwaysSampler</value>
+    </property>
+    <property>
+      <name>hadoop.htrace.span.receiver.classes</name>
+     <value>org.apache.htrace.core.LocalFileSpanReceiver</value>
+    </property>
+    <property>
+      <name>hadoop.htrace.htraced.rest.url</name>
+      <value>http://127.0.0.1:9095/</value>
+    </property>
+    <property>
+      <name>hadoop.htrace.local.file.span.receiver.capacity</name>
+      <value>1</value>
+    </property>
 </configuration>
