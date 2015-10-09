@@ -21,6 +21,14 @@ launch_htraced() {
             /home/cmccabe/htrace/htrace-htraced/go/build/htraced
 }
 
+launch_nn() {
+    env HADOOP_OPTS="-Dmy.hadoop.log.file=namenode.log -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintTenuringDistribution -XX:+PrintAdaptiveSizePolicy -XX:+PrintGCApplicationStoppedTime -XX:+PrintReferenceGC -Xloggc:/data/11/cmccabe/logs/namenode-gc.log -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=5m,settings=profile,filename=/data/11/cmccabe/logs/nn_startup.jfr"
+        /usr/sbin/daemonize \
+            -p /data/11/cmccabe/pids/namenode.pid \
+            -l /data/11/cmccabe/pids/namenode.pid \
+            /home/cmccabe/sync/hadoop/bin/hadoop namenode
+}
+
 launch_dn() {
     name=$1
     shift
@@ -36,7 +44,7 @@ launch_dn() {
 [ -e /home/cmccabe/sync/hadoop/logs ] || ln -s /data/11/cmccabe/logs /home/cmccabe/sync/hadoop/logs
 
 if [ $IS_MASTER -ne 0 ]; then
-    launchit namenode /home/cmccabe/sync/hadoop/bin/hadoop namenode
+    launch_nn
     launchit resourcemanager /home/cmccabe/sync/hadoop/bin/yarn resourcemanager
     launch_htraced
 else
