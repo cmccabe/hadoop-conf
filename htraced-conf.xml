@@ -2,16 +2,20 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 <configuration>
   <property>
-    <name>log.level</name>
+    <name>htraced.log.level</name>
     <value>TRACE</value>
   </property>
   <property>
-    <name>log.path</name>
+    <name>htraced.log.path</name>
     <value>/data/11/cmccabe/logs/htraced.log</value>
   </property>
   <property>
     <name>web.address</name>
     <value>a2402.halxg.cloudera.com:9095</value>
+  </property>
+  <property>
+    <name>hrpc.address</name>
+    <value>a2402.halxg.cloudera.com:9075</value>
   </property>
   <property>
     <name>data.store.directories</name>
