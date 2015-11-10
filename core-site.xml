@@ -24,7 +24,7 @@
   </property>
   <property>
     <name>hadoop.htrace.htraced.receiver.address</name>
-    <value>a2402.halxg.cloudera.com:9075</value>
+    <value>a2404.halxg.cloudera.com:9075</value>
   </property>
   <property>
     <name>hadoop.htrace.htraced.error.log.period.ms</name>
