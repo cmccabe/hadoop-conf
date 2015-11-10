@@ -3,7 +3,7 @@
 <configuration>
   <property>
     <name>htraced.log.level</name>
-    <value>TRACE</value>
+    <value>INFO</value>
   </property>
   <property>
     <name>htraced.log.path</name>

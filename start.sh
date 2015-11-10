@@ -15,6 +15,7 @@ launchit() {
 
 launch_htraced() {
     env HTRACED_CONF_DIR=/home/cmccabe/conf \
+        GOMAXPROCS=16 \
         /usr/sbin/daemonize \
             -p /data/11/cmccabe/pids/htraced.pid \
             -l /data/11/cmccabe/pids/htraced.pid \
