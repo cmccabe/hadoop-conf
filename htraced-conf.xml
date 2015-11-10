@@ -10,6 +10,10 @@
     <value>/data/11/cmccabe/logs/htraced.log</value>
   </property>
   <property>
+    <name>metrics.heartbeat.period.ms</name>
+    <value>10</value>
+  </property>
+  <property>
     <name>web.address</name>
     <value>a2402.halxg.cloudera.com:9095</value>
   </property>

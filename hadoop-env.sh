@@ -23,7 +23,7 @@ export HOSTS="${MASTER} ${SLAVES}"
 export JAVA_HOME="${JAVA_HOME-/usr/java/jdk1.6.0_29}"
 
 # Extra Java CLASSPATH elements.  Optional.
-# export HADOOP_CLASSPATH="<extra_entries>:$HADOOP_CLASSPATH"
+export HADOOP_CLASSPATH="/usr/lib/htrace/lib/htrace-htraced-4.1.0-cdh5_1.0.0.jar:$HADOOP_CLASSPATH"
 
 # The maximum amount of heap to use, in MB. Default is 1000.
 # export HADOOP_HEAPSIZE=2000
