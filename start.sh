@@ -18,7 +18,7 @@ launch_htraced() {
         /usr/sbin/daemonize \
             -p /data/11/cmccabe/pids/htraced.pid \
             -l /data/11/cmccabe/pids/htraced.pid \
-            /home/cmccabe/htrace/htrace-htraced/go/build/htraced
+            /home/cmccabe/cdh/repos/cdh5/htrace/htrace-htraced/go/build/htraced
 }
 
 # YARN won't log to /data/11/cmccabe/logs, but instead always wants to log in /home/cmccabe/sync/hadoop/logs 
