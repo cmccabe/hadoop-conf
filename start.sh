@@ -27,8 +27,11 @@ launch_htraced() {
 if [ $IS_MASTER -ne 0 ]; then
     launchit namenode /home/cmccabe/sync/hadoop/bin/hadoop namenode
     launchit resourcemanager /home/cmccabe/sync/hadoop/bin/yarn resourcemanager
-    launch_htraced
 else
     launchit datanode /home/cmccabe/sync/hadoop/bin/hadoop datanode
     launchit nodemanager /home/cmccabe/sync/hadoop/bin/yarn nodemanager
+fi
+
+if [[ `hostname` =~ a2404 ]]; then
+    launch_htraced
 fi
