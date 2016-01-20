@@ -34,6 +34,7 @@ elif [ -f "../../${res}" ]; then
     res="../../${res}"
 else
     die "can't find tar"
+fi
 tar xvzf ${res} --strip-components=1 -C ~/sync/hadoop
 
 # Install HTrace jars
