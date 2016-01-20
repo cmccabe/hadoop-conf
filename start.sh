@@ -15,11 +15,12 @@ launchit() {
 
 launch_htraced() {
     env HTRACED_CONF_DIR=/home/cmccabe/conf \
+        HTRACED_WEB_DIR=/home/cmccabe/sync/htrace/webapp \
         GOMAXPROCS=16 \
         /usr/sbin/daemonize \
             -p /data/11/cmccabe/pids/htraced.pid \
             -l /data/11/cmccabe/pids/htraced.pid \
-            /home/cmccabe/cdh/repos/cdh5/htrace/htrace-htraced/go/build/htraced
+            /home/cmccabe/sync/htrace/htraced
 }
 
 # YARN won't log to /data/11/cmccabe/logs, but instead always wants to log in /home/cmccabe/sync/hadoop/logs 
