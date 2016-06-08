@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <property>
+    <name>sentry.service.server.rpc-address</name>
+    <value>localhost</value>
+  </property>
+  <property>
+    <name>sentry.service.server.rpc-port</name>
+    <value>8038</value>
+  </property>
+  <property>
+    <name>sentry.service.security.mode</name>
+    <value>none</value> <!-- disable kerberos -->
+  </property>
+  <property>
+    <name>sentry.service.admin.group</name>
+    <value>hive,impala,hue,solr</value>
+  </property>
+  <property>
+    <name>sentry.service.allow.connect</name>
+    <value>hive,impala,hue,hdfs,solr</value>
+  </property>
+  <property>
+    <name>sentry.store.group.mapping</name>
+    <value>org.apache.sentry.provider.common.HadoopGroupMappingService</value>
+  </property>
+  <!--<property>
+    <name>sentry.service.server.keytab</name>
+    <value>sentry.keytab</value>
+  </property>
+  -->
+  <property>
+    <name>sentry.store.jdbc.url</name>
+    <value>jdbc:derby:;databaseName=metastore_db;create=true</value>
+  </property>
+  <!--<property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:derby:;databaseName=metastore_db;create=true</value>
+  </property> -->
+  <property>
+    <name>sentry.store.jdbc.driver</name>
+    <value>org.apache.derby.jdbc.EmbeddedDriver</value>
+  </property>
+  <property>
+    <name>sentry.store.jdbc.user</name>
+    <value>sentry</value>
+  </property>
+  <property>
+    <name>sentry.store.jdbc.password</name>
+    <value>sentry</value>
+  </property>
+<!--
+What is this?
+  <property>
+    <name>sentry.service.processor.factories</name>
+    <value>org.apache.sentry.provider.db.service.thrift.SentryPolicyStoreProcessorFactory,org.apache.sentry.provider.db.generic.service.thrift.SentryGenericPolicyProcessorFactory,org.apache.sentry.hdfs.SentryHDFSServiceProcessorFactory</value>
+  </property>
+-->
+  <property>
+    <name>sentry.policy.store.plugins</name>
+    <value>org.apache.sentry.hdfs.SentryPlugin</value>
+  </property>
+  <property>
+    <name>sentry.hdfs.integration.path.prefixes</name>
+    <value>/user/hive/warehouse</value>
+  </property>
+  <!--<property>
+    <name>cloudera.navigator.client.config</name>
+    <value>/var/run/cloudera-scm-agent/process/21-sentry-SENTRY_SERVER/navigator.client.properties</value>
+  </property> 
+  <property>
+    <name>hadoop.security.credential.provider.path</name>
+    <value>localjceks://file//var/run/cloudera-scm-agent/process/21-sentry-SENTRY_SERVER/creds.localjceks</value>
+  </property> -->
+</configuration>
